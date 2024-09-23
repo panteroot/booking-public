@@ -1,0 +1,9 @@
+# Redirect all paths to index.html for client-side routing
+/*  /index.html  200
+
+
+# Custom 404 page
+# /404  /404.html  404
+
+# Optional: Handle other specific error codes if needed
+# /500  /500.html  500

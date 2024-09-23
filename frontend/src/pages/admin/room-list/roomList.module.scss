@@ -1,0 +1,66 @@
+.roomList {
+  display: grid;
+  font-size: 18px;
+
+  .card {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+    margin: 10px;
+
+    .bodySection {
+      font-size: var(--fs-body_section);
+      font-weight: 900;
+    }
+
+    .search {
+      display: flex;
+      justify-content: center;
+
+      gap: 20px;
+
+      select,
+      input {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      // button {
+      //   font-size: 20px;
+      //   width: 120px;
+      // }
+    }
+
+    .formButton {
+      display: flex;
+      justify-content: right;
+      gap: 20px;
+
+      button {
+        margin-bottom: 20px;
+        margin-right: -10px;
+      }
+    }
+
+    table {
+      padding: 0;
+      margin: 0;
+      border-collapse: collapse;
+      width: 100%;
+
+      th,
+      td {
+        border: 1px solid lightgray;
+        padding: 10px;
+
+        .button {
+          font-size: 16px;
+          height: fit-content;
+          width: fit-content;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}

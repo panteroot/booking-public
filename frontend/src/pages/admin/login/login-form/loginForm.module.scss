@@ -1,0 +1,92 @@
+@import "../../../../variables";
+
+.login {
+  display: grid;
+  // margin-top:var(--margin-content-container);
+
+  .form {
+    display: grid;
+    gap: 20px;
+
+    .divCol {
+      display: grid;
+    }
+
+    .divCol2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .divCol3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .divInput {
+      display: grid;
+
+      // input,
+      // input:active,
+      // input:focus,
+      // input[type="email"]:focus {
+      //   margin-block: var(--margin-input);
+      //   border-radius: var(--radius-input);
+      //   border: 1px solid gray;
+      //   font-size: var(--fs-input);
+      // }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      select {
+        padding: 8px; //var(--padding-input);
+        font-family: "Noto Sans JP", sans-serif;
+      }
+
+      input.errorInput,
+      input.errorInput {
+        border: 1px solid var(--clr-error_input);
+      }
+
+      .error {
+        color: var(--fc-error);
+      }
+    }
+
+    .formButton {
+      display: flex;
+      justify-content: right;
+
+      .buttonSave {
+        padding: 5px 10px;
+        font-weight: var(--fw-body_btn);
+        height: var(--btn-body_height);
+        background-color: var(--clr-body_btn);
+        color: var(--fc-body_btn);
+        font-size: var(--fs-body_btn);
+        border-radius: var(--btn-body_radius);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Medium Devices
+@container (min-width: #{$bp-md-min_width}) and (max-width: #{$bp-md-max_width}) {
+  .login {
+    .form {
+      .divCol2 {
+        display: grid;
+        grid-template-columns: auto;
+      }
+
+      .formButton {
+        .buttonSave {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  .title {
+    font-size: var(--fs-header_logo);
+    font-weight: var(--fw-header);
+    color: var(--fc-header);
+    text-decoration: none;
+  }
+}
+
+.items {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .link {
+    color: white;
+    // text-decoration: none;
+    font-weight: 900;
+  }
+
+  button {
+    color: var(--fc-header_btn);
+    font-weight: var(--fw-header_btn);
+    font-size: var(--fs-header_btn);
+    height: var(--btn-header_height);
+    width: var(--btn-body_width);
+    background-color: var(--clr-header_btn);
+    border-radius: var(--btn-header_radius);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+.toast {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 60px;
+  width: 300px;
+
+  color: var(--fc-toast);
+  font-size: var(--fs-toast);
+  font-weight: var(--fw-toast);
+  z-index: 1;
+
+  .toastContainer {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: 3fr 1fr;
+    justify-items: end;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid white;
+
+    padding: var(--padding-toast);
+    border-radius: var(--radius-toast);
+  }
+
+  .closeIcon {
+    cursor: pointer;
+  }
+}

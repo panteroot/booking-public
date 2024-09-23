@@ -1,0 +1,165 @@
+:root {
+  --clr-neutral: white;
+  --clr-primary: #003b95;
+  --clr-secondary: #006ce4;
+
+  --line-height: 1.5;
+
+  --btn-header_height: 40px;
+  --btn-body_height: 40px;
+  --btn-footer_height: 16px;
+
+  --btn-header_width: 40px;
+  --btn-body_width: 80px;
+  --btn-footer_width: 16px;
+
+  --btn-header_radius: 5px;
+  --btn-searchbar_radius: 10px;
+  --btn-body_radius: 5px;
+  --btn-footer_radius: 5px;
+
+  --radius-toast: 5px;
+  --radius-input: 5px;
+  --margin-input: 2px;
+  --margin-content-container: 50px;
+
+  --padding-toast: 5px;
+  --padding-input: 5px;
+  --padding-property: 10px;
+  --padding-modal: 10px;
+  --padding-body_div: 10px;
+  --padding-div_bottom: 50px;
+
+  --gap-body_main_div: 20px;
+  --gap-body: 10px;
+
+  --fw-toast: 600;
+  --fw-header: 900;
+  --fw-header_btn: 700;
+  --fw-hero: 600;
+  --fw-searchbar: 500;
+  --fw-searchbar_btn: 700;
+  --fw-body: 600;
+  --fw-body_btn: 600;
+  --fw-sidefilter: 700;
+  --fw-footer_section: 700;
+  --fw-footer: 500;
+  --fw-footer_btn: 700;
+
+  --fc-toast: white;
+  --fc-header: white;
+  --fc-img: white;
+  --fc-error: red;
+
+  --fs-toast: 20px;
+  --fs-header_logo: 30px;
+  --fs-header_hero: 35px;
+  --fs-header_hero_text: 23px;
+  --fs-header_menu: 18px;
+  --fs-header_btn: 15px;
+  --fs-header_text: 16px;
+
+  --fs-searchbar: 16px;
+  --fs-searchbar_btn: 20px;
+
+  --fs-body: 16px;
+  --fs-body_section: 26px;
+  --fs-body_subsection: 22px;
+  --fs-body_section_text: 18px;
+  --fs-body_btn: 16px;
+
+  --fs-input: 16px;
+
+  --fs-sidefilter_section: 19px;
+  --fs-sidefilter_subsection: 18px;
+  --fs-sidefilter_text: 17.5px;
+
+  --fs-footer_section: 30px;
+  --fs-footer_text: 20px;
+  --fs-footer_btn: 20px;
+
+  --fc-header_btn: #003580;
+  --fc-searchbar: black;
+  --fc-searchbar_btn: white;
+  --fc-body_title: blue;
+  --fc-body_subtitle: blue;
+  --fc-body_text: black;
+  --fc-body_btn: white;
+  --fc-body_error: red;
+  --fc-footer: white;
+  --fc-footer_btn: white;
+
+  --clr-header_btn: white;
+  --clr-searchbar: #febb02;
+  --clr-searchbar_icon: lightgray;
+  --clr-searchbar_btn: blue;
+  --clr-body_btn: blue;
+  --clr-footer_btn: #0071c2;
+  --clr-error_input: red;
+
+  // sections and divs
+  --hero-height: 150px;
+  --hero-padding_block: 10px;
+
+  --menu-height: 80px;
+
+  --searchbar-height: 50px;
+  --searchbar-width: 65%;
+}
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-size: var(--fs-body);
+  font-family: "Noto Sans JP", sans-serif;
+
+  color: var(--fc-body_text);
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: var(--padding-input);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: var(--fs-body);
+    height: auto;
+    line-height: 1.5;
+  }
+
+  button {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:checked {
+      border: none;
+      background-color: gray;
+    }
+  }
+
+  input,
+  input:active,
+  input:focus,
+  input[type="email"]:focus {
+    margin-block: var(--margin-input);
+    border-radius: var(--radius-input);
+    border: 1px solid gray;
+    font-size: var(--fs-input);
+  }
+
+  line-height: var(--line-height);
+}
+
+#root {
+  height: 100vh;
+  box-sizing: border-box;
+}

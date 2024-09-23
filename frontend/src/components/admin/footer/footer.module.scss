@@ -1,0 +1,18 @@
+$bg-color: #fff;
+$txt-color: black;
+
+.footer {
+  width: 100%;
+  height: 100%;
+
+  background-color: $bg-color;
+  color: $txt-color;
+  font-size: 20px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+
+  .footerRow {
+    margin-block: auto;
+  }
+}

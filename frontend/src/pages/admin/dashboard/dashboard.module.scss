@@ -1,0 +1,46 @@
+.dashboard {
+  display: grid;
+  font-size: 18px;
+
+  .card {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+    margin: 10px;
+
+    .bodySection {
+      font-size: var(--fs-body_section);
+      font-weight: 900;
+    }
+
+    .cardTitle {
+      height: 40px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  /* FloatingArrowButton.css */
+  .scrollToBottom {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #007bff; /* Background color of the button */
+    color: #fff; /* Text color */
+    border-radius: 50%; /* Circular button */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; /* Arrow size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+
+  .scrollToBottom:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+}

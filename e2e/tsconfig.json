@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // or "ES6" if you need broader compatibility
+    "module": "ESNext", // Use "CommonJS" if you prefer CommonJS modules
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"], // Include Node.js types
+    "strict": true, // Optional: Enable strict type-checking options
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["**/*.ts"], // Adjust this if your test files are in subdirectories
+  "exclude": ["node_modules", "**/*.test.ts"] // Optional: Exclude specific files or directories
+}

@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    // "noEmitOnError": false, //!
+    // "noImplicitAny": false, //!
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // alias mapping
+    "baseUrl": "./src",
+    "paths": {
+      "@frontendTypes/*": ["frontend-types/*"],
+      "@api/*": ["api/*"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@contexts/*": ["contexts/*"],
+      "@forms/*": ["forms/*"],
+      "@helpers/*": ["helpers/*"],
+      "@hooks/*": ["hooks/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@variables": ["_variables.scss"],
+      "@repositories/*": ["repositories/*"],
+      "@routes/*": ["routes/*"]
+    }
+  },
+  "include": ["src", "Test.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+  // "exclude": ["frontend/src/pages/my-bookings/MyBookings.tsx"]
+}

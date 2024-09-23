@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    // width: 50%;
+    gap: 2px;
+
+    li {
+      .button {
+        padding: 2px 5px !important;
+        width: 25px;
+        font-size: 16px !important;
+
+        border-radius: 0px !important;
+        cursor: pointer;
+        color: black !important;
+        background-color: lightgray !important;
+      }
+
+      .buttonCurrentPage {
+        background-color: gray !important;
+      }
+    }
+  }
+}
